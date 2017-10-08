@@ -1,4 +1,4 @@
-client.login(process.env.BOT_TOKEN);*
+
   A ping pong bot, whenever you send "ping", it replies "pong".
 */
 

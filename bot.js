@@ -4,7 +4,7 @@
 const Discord = require('discord.js');
 
 // Create an instance of a Discord client
-const client = new Discord.Client();
+const bot = new Discord.Bot();
 
 // The token of your bot - https://discordapp.com/developers/applications/me
 const token = 'MzY2Mjg2Njg5Mzk3NzY4MTkz.DLqqlQ.QX0z0YnM3s6CLrKMK_jo6qshdQs';

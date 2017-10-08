@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "TIMOTHY1982 IS GAAAAAY",
   "main": "bot.js",
+  "discord.js": "github:hydrabolt/discord.js"
   "author": "reborn#2341",
   "dependencies": {
     "discord.io": "^2.5.3",

@@ -11,7 +11,7 @@ const token = 'MzY2Mjg2Njg5Mzk3NzY4MTkz.DLqqlQ.QX0z0YnM3s6CLrKMK_jo6qshdQs';
 
 var fs = require('fs');
 
-var help = fs.readFileSync('C:/Users/Asus/commands.txt', 'utf8'); 
+var help = fs.readFileSync('./commands.txt', 'utf8'); 
 // The ready event is vital, it means that your bot will only start reacting to information
 // from Discord _after_ ready is emitted
 client.on('ready', () => {

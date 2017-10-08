@@ -15,6 +15,7 @@ var help = fs.readFileSync('./commands.txt', 'utf8');
 // The ready event is vital, it means that your bot will only start reacting to information
 // from Discord _after_ ready is emitted
 client.on('ready', () => {
+  client.user.setGame('Type "timothy help" for a list of commands', 'https://www.twitch.tv/truexpixels');
   console.log('TIMOTHY IS FUCKING GAY!!!!');
 });
 

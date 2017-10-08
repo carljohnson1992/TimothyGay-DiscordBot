@@ -4,7 +4,7 @@
 const Discord = require('discord.js');
 
 // Create an instance of a Discord client
-const bot = new Discord.Bot();
+const client = new Discord.Client();
 
 // The token of your bot - https://discordapp.com/developers/applications/me
 const token = 'MzY2Mjg2Njg5Mzk3NzY4MTkz.DLqqlQ.QX0z0YnM3s6CLrKMK_jo6qshdQs';
@@ -14,8 +14,8 @@ var fs = require('fs');
 var help = fs.readFileSync('./commands.txt', 'utf8'); 
 // The ready event is vital, it means that your bot will only start reacting to information
 // from Discord _after_ ready is emitted
-bot.on('ready', () => {
-  bot.user.setGame('Type "timothy help" for a list of commands', 'https://www.twitch.tv/truexpixels');
+client.on('ready', () => {
+  setGame('Type "timothy help" for a list of commands', 'https://www.twitch.tv/truexpixels');	
   console.log('TIMOTHY IS FUCKING GAY!!!!');
 });
 

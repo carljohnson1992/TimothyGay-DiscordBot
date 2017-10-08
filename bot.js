@@ -60,4 +60,4 @@ client.on('message', message => {
 });
 
 // Log our bot in
-client.login(process.env.token);
+client.login(token);

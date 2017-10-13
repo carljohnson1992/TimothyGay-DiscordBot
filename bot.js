@@ -52,7 +52,8 @@ client.on('message', message => {
  if (message.content === 'timothy honor') {
   
     message.channel.send('https://media.discordapp.net/attachments/364080873873604615/366315117065011200/timothy_drunk_5.png?width=359&height=87');
-      };	 	  
+      };
+});
 //Banning and kicking members
 client.on("message", (message) => {
     if (message.content.startsWith("timkick")) {

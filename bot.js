@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 // The token of your bot - https://discordapp.com/developers/applications/me
-const token = 'MzY2Mjg2Njg5Mzk3NzY4MTkz.DLqqlQ.QX0z0YnM3s6CLrKMK_jo6qshdQs';
+const token = 'token';
 var fs = require('fs');
 
 var help = fs.readFileSync('./commands.txt', 'utf8');

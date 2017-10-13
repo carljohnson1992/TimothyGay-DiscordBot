@@ -53,8 +53,33 @@ client.on('message', message => {
   
     message.channel.send('https://media.discordapp.net/attachments/364080873873604615/366315117065011200/timothy_drunk_5.png?width=359&height=87');
       };	 	  
-	  
+//Banning and kicking members
+  //KICK
 });
-
+client.on(`message`, message => {
+  if (message.content === "timothy kick") {
+    let modRole = message.guild.roles.find("name", "Mods");
+    if(message.member.roles.has(modRole.id)) { 
+      let kickMember = message.guild.member(message.mentions.users.first());
+      message.guild.member(kickMember).kick();
+      message.channel.sendMessage("LOL HE GOT THE BOOT HAHA");
+    } else {
+      return message.reply("YOU GAY RETARD YOU ARENT EVEN MOD FUCK OFF SCREYEOYOOYOYOYOOY.");
+    }
+  }
+  //BAN
+});
+client.on(`message`, message => {
+  if (message.content === "timothy ban") {
+    let modRole = message.guild.roles.find("name", "Mods");
+    if(message.member.roles.has(modRole.id)) { 
+      let banMember = message.guild.member(message.mentions.users.first());
+      message.guild.member(banMember).ban();
+      message.channel.sendMessage("LOL HE GOT BEANED LMAO");
+    } else {
+      return message.reply("YOU GAY RETARD YOU ARENT EVEN MOD FUCK OFF SCREYEOYOOYOYOYOOY.");
+    }
+  }
+});
 // Log our bot in
 client.login(process.env.BOT_TOKEN);

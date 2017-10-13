@@ -57,7 +57,7 @@ client.on('message', message => {
   //KICK
 });
 client.on(`message`, message => {
-  if (message.content === "timothy kick") {
+  if (message.content === "timkick") {
     let modRole = message.guild.roles.find("name", "Mods");
     if(message.member.roles.has(modRole.id)) { 
       let kickMember = message.guild.member(message.mentions.users.first());
@@ -70,7 +70,7 @@ client.on(`message`, message => {
   //BAN
 });
 client.on(`message`, message => {
-  if (message.content === "timothy ban") {
+  if (message.content === "timban") {
     let modRole = message.guild.roles.find("name", "Mods");
     if(message.member.roles.has(modRole.id)) { 
       let banMember = message.guild.member(message.mentions.users.first());

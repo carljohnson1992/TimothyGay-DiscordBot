@@ -82,7 +82,11 @@ if (message.content === 'smuggy') {
 
         message.channel.send('<@195460837329207297>');
               };
+	
+if (message.content === 'wednesday') {
 
+        message.channel.send('<@238758020182441984>');
+              };
 });
 
 // Log our bot in

@@ -85,7 +85,7 @@ if (message.content === 'smuggy') {
 	
 if (message.content === 'wednesday') {
 
-        message.channel.send('<@238758020182441984>');
+        message.channel.send('<@238758020182441984>day');
               };
 });
 

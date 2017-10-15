@@ -110,7 +110,7 @@ if (message.content === 'wednesday') {
 										"Very doubtful"];
 
 			var result = Math.floor((Math.random() * sayings.length) + 0);
-			bot.reply(message, sayings[result]);
+			client.reply(message, sayings[result]);
     };
 });
 

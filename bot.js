@@ -87,22 +87,6 @@ if (message.content === 'wednesday') {
 
         message.channel.send('<@238758020182441984>day');
               };
-describe('eightBall', function() {
-  const answers = require('./eightball');
-  it('should complain about lack of question', function() {
-    return eightBall['8ball']([])
-      .then(function (data) {
-        expect(data).to.be.a('string');
-        expect(data).to.equal('Might wanna ask a question...');
-      });
-  });
-  it('should return an answer', function() {
-    return eightBall['8ball'](['test'])
-      .then(function (data) {
-        expect(data).to.be.a('string');
-        expect(answers).to.include(data);
-      });
-  })
 });
 
 // Log our bot in

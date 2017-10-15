@@ -18,7 +18,7 @@ client.on('ready', () => {
 // Create an event listener for messages
 client.on('message', message => {
 
-  if (message.content === 'timothy')toLowerCase() 
+  if (message.content === 'timothy') {
 
     message.channel.send('TIMMOTHY FUCKING HOMO FUCK TIMMOTHS I HATE TIMMY!!!!');
       };

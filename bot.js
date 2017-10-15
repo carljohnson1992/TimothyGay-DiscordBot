@@ -107,7 +107,7 @@ if (message.content === 'wednesday') {
               };
 
 if (message.content === 'timball') {
-if (args[1]} message.channel.send(fortune[Math.floor(Math.random() * fortune.lenght)]);
+if (args[1] message.channel.send(fortune[Math.floor(Math.random() * fortune.lenght)]);
         };        
 });
 

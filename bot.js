@@ -6,6 +6,24 @@ const client = new Discord.Client();
 
 // The token of your bot - https://discordapp.com/developers/applications/me
 const token = 'token';
+var fortune = [
+	"It is certain",
+	"It is decidedly so",
+	"Without a doubt",
+	"Yes, definitely",
+	"You may rely on it",
+	"As I see it, yes",
+	"Most likely",
+	"Outlook good",
+	"Yes",
+	"Signs point to yes",
+	"Don't count on it",
+        "My reply is no",
+	"My sources say no",
+	"Outlook not so good",
+	"Very doubtful"
+];
+
 var fs = require('fs');
 
 var help = fs.readFileSync('./commands.txt', 'utf8');
@@ -87,6 +105,10 @@ if (message.content === 'wednesday') {
 
         message.channel.send('<@238758020182441984>day');
               };
+
+case 8ball
+if (args[1]} message.channel.send(fortune[Math.floor(Math.random() * fortune.lenght)]);
+        };        
 });
 
 // Log our bot in

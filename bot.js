@@ -106,7 +106,7 @@ if (message.content === 'wednesday') {
         message.channel.send('<@238758020182441984>day');
               };
 
-case 8ball
+if (message.content === 'timball') {
 if (args[1]} message.channel.send(fortune[Math.floor(Math.random() * fortune.lenght)]);
         };        
 });
